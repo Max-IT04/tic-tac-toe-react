@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import GameLayout from './GameLayout';
 
-// Выигрышные комбинации
 const WIN_PATTERNS = [
-	[0, 1, 2], [3, 4, 5], [6, 7, 8], // горизонтали
-	[0, 3, 6], [1, 4, 7], [2, 5, 8], // вертикали
-	[0, 4, 8], [2, 4, 6]             // диагонали
+	[0, 1, 2], [3, 4, 5], [6, 7, 8], 
+	[0, 3, 6], [1, 4, 7], [2, 5, 8], 
+	[0, 4, 8], [2, 4, 6]             
 ]
 
 const Game = () => {
@@ -44,7 +43,7 @@ const Game = () => {
 		// 3. Проверяем победителя
 		const winner = checkWinner(newField);
 
-		// 4. Проверяем ничью (все клетки заполнены)
+		// 4. Проверяем ничью 
 		const isFieldFull = newField.every(cell => cell !== '');
 
 		// 5. Обновляем состояние
