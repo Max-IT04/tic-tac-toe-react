@@ -1,0 +1,31 @@
+.field {
+	display: inline-block;
+	margin: 20px;
+}
+
+.row {
+	display: flex;
+}
+
+.cell {
+	width: 80px;
+	height: 80px;
+	margin: 5px;
+	font-size: 36px;
+	font-weight: bold;
+	border: 2px solid #333;
+	background: white;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.cell:hover {
+	background: #f0f0f0;
+}
+
+.cell:disabled {
+	cursor: not-allowed;
+	background: #e0e0e0;
+}
+
+
