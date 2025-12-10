@@ -5,7 +5,7 @@ import styles from './Field.module.css';
 const FieldLayout = ({ field, onCellClick }) => {
 	return (
 		<div className={styles.field}>
-			{/* Первая строка */}
+			
 			<div className={styles.row}>
 				<button className={styles.cell} onClick={() => onCellClick(0)}>
 					{field[0]}
@@ -18,7 +18,6 @@ const FieldLayout = ({ field, onCellClick }) => {
 				</button>
 			</div>
 
-			{/* Вторая строка */}
 			<div className={styles.row}>
 				<button className={styles.cell} onClick={() => onCellClick(3)}>
 					{field[3]}
@@ -31,7 +30,6 @@ const FieldLayout = ({ field, onCellClick }) => {
 				</button>
 			</div>
 
-			{/* Третья строка */}
 			<div className={styles.row}>
 				<button className={styles.cell} onClick={() => onCellClick(6)}>
 					{field[6]}
